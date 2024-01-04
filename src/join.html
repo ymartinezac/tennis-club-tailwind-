@@ -6,29 +6,36 @@
 
 <body>
     <include src="./views/header.html"></include>
-    <main class="join__main">
-        <h1 class="join__title">Join Us!</h1>
-        <form name="join">
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">E-mail</label>
-                <input type="email" class="form-control join__input" id="exampleFormControlInput1"
-                    placeholder="name@example.com">
+    <main
+        class="w-[100cqw] mt-5 mb-0 mx-0 px-2.5 py-0 md:w-[80cqw] md:mt-0 md:mb-[50px] md:mx-[10cqw] lg:w-[50cqw] lg:mt-0 lg:mb-[50px] lg:mx-[25cqw]">
+        <h1 class="text-center w-full text-[calc(1.375rem_+_1.5vw)] pt-[50px] pb-2.5 px-0">Join Us!</h1>
+        <form name="join"
+            class="shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0px] m-[5px] p-[30px] rounded-[5px] border-[3px] border-solid border-[rgba(100,100,111,0.445)]">
+            <div class="mb-4">
+                <label for="exampleFormControlInput1" class="inline-block mb-2">E-mail</label>
+                <input type="email"
+                    class="font-form appearance-none bg-[#f7f7f9] border bg-clip-padding w-full text-base font-normal leading-normal block px-3 py-1.5 rounded-md border-solid border-[#dee2e6] focus:outline-none focus:shadow-[0_1px_1px_hsl(70,100%,50%)_inset,0_0_8px_hsl(70,100%,50%)] focus:border-[hsl(70,100%,50%)]"
+                    id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
-            <div class="mb-3">
-                <label for="exampleFormControlInput2" class="form-label">Name</label>
-                <input type="email" class="form-control join__input" id="exampleFormControlInput2"
-                    placeholder="Your name">
+            <div class="mb-4">
+                <label for="exampleFormControlInput2" class="inline-block mb-2">Name</label>
+                <input type="email"
+                    class="font-form appearance-none bg-[#f7f7f9] border bg-clip-padding w-full text-base font-normal leading-normal block px-3 py-1.5 rounded-md border-solid border-[#dee2e6] focus:outline-none focus:shadow-[0_1px_1px_hsl(70,100%,50%)_inset,0_0_8px_hsl(70,100%,50%)] focus:border-[hsl(70,100%,50%)]"
+                    id="exampleFormControlInput2" placeholder="Your name">
             </div>
-            <div class="mb-3">
-                <label class="form-label">Level</label>
-                <select class="form-select join__input" aria-label="Default select example">
-                    <option selected>Select level</option>
-                    <option value="1">Begginer</option>
-                    <option value="2">Intermediate</option>
-                    <option value="3">Advanced</option>
+            <div class="mb-4">
+                <label class="inline-block mb-2">Level</label>
+                <select
+                    class="font-form appearance-none bg-[#f7f7f9] border bg-clip-padding w-full text-base font-normal leading-normal block px-3 py-1.5 rounded-md border-solid border-[#dee2e6] focus:outline-none focus:shadow-[0_1px_1px_hsl(70,100%,50%)_inset,0_0_8px_hsl(70,100%,50%)] focus:border-[hsl(70,100%,50%)]"
+                    aria-label="Default select example">
+                    <option selected class="font-form">Select level</option>
+                    <option value="1" class="font-form">Begginer</option>
+                    <option value="2" class="font-form">Intermediate</option>
+                    <option value="3" class="font-form">Advanced</option>
                 </select>
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit"
+                class="font-form text-white bg-green border-green text-base font-normal leading-normal border px-3 py-1.5 rounded-md">Submit</button>
         </form>
     </main>
     <include src="./views/footer.html"></include>

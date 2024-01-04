@@ -11,7 +11,7 @@ module.exports = {
     fontFamily: {
       heading: ['Vina Sans', 'sans-serif'],
       body: ['Noto Sans', 'serif'],
-      button: ['Ubuntu', 'sans-serif',]
+      form: ['Ubuntu', 'sans-serif',]
     },
     screens: {
       'md': '864px',
