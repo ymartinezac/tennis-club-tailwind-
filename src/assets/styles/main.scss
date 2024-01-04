@@ -6,7 +6,6 @@
 /**
  * Import variables
  */
-@layer bootstrap, base, module-styles;
 
 @import "variables";
 
@@ -17,9 +16,7 @@
  * see: https://v2.parceljs.org/features/module-resolution/
  * see commented examples below
  */
-@layer bootstrap {
-    @import "bootstrap/scss/bootstrap";
-}
+
 
 @import "npm:@fortawesome/fontawesome-free/css/all.css";
 /**
@@ -27,17 +24,19 @@
  * It's a best practice to use a different partial for each page
  */
 
+@tailwind base;
+@tailwind components;
 
-@layer base {
-    @import "base";
-}
+@tailwind utilities;
 
-@layer module-styles {
-    @import "layouts/home";
-    @import "layouts/members";
-    @import "layouts/blog";
-    @import "layouts/join";
-}
+@import "base";
+
+
+@import "layouts/home";
+@import "layouts/members";
+@import "layouts/blog";
+@import "layouts/join";
+
 
 /**
  * Do NOT include anything else in this file!

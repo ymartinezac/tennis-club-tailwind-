@@ -4,18 +4,40 @@
     box-sizing: border-box;
 }
 
+body {
+    @apply font-body;
+
+}
+
 h1,
 h2,
 h3,
 h4,
 h5 {
-    margin: 0;
-    color: $primary;
+    @apply font-heading text-green;
 }
 
 h1:is(.header-with-background) {
     font-size: 78px;
     color: $bg-white;
+}
+
+@layer components {
+    .num-list-item {
+        @apply flex-wrap items-baseline gap-x-2.5 flex border no-underline block relative px-4 py-2 border-solid border-[#c2c4c3];
+    }
+
+    .num-list-item:not(:first-child) {
+        @apply border-t-0;
+    }
+
+    .num-list-item:last-child {
+        @apply rounded-b;
+    }
+
+    .num-list-item:first-child {
+        @apply rounded-t;
+    }
 }
 
 body {
