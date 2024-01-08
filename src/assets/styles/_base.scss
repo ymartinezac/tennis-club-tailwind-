@@ -6,7 +6,6 @@
 
 body {
     @apply font-body;
-
 }
 
 h1,
@@ -17,81 +16,23 @@ h5 {
     @apply font-heading text-green;
 }
 
-h1:is(.header-with-background) {
-    font-size: 78px;
-    color: $bg-white;
-}
 
 @layer components {
     .num-list-item {
         @apply flex-wrap border-t-0 items-baseline gap-x-2.5 flex border no-underline block relative px-4 py-2 border-solid border-[#c2c4c3] last:rounded-b first:rounded-t first:border-t;
     }
 
+    .button-secondary {
+        @apply font-form text-green border-green text-base font-normal leading-normal border px-3 py-1.5 rounded-md hover:text-white hover:bg-green;
+    }
 
+    .button-primary {
+        @apply font-form text-white border-green bg-green text-base font-normal leading-normal border px-3 py-1.5 rounded-md hover:text-green hover:bg-white;
+    }
 }
 
 body {
     display: flex;
     flex-direction: column;
     min-height: 100dvh;
-}
-
-footer {
-    width: 100dvw;
-    padding: 0 10vw;
-    margin-top: 70px;
-}
-
-header {
-    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
-}
-
-.header__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 80dvw;
-    margin: 5px 10dvw;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo__icon {
-    height: 40px;
-    margin-right: 5px;
-}
-
-.logo__text {
-    padding: 0;
-    margin-top: -8px;
-    font-family: $headings-font-family;
-    font-size: 35px;
-    color: $primary;
-}
-
-.footer__credits {
-    padding: 10px 0;
-    border-top: 1px solid rgba(128, 128, 128, 0.5);
-}
-
-.footer__credit {
-    font-size: 12px;
-    color: gray;
-}
-
-.footer__social {
-    display: flex;
-    column-gap: 10px;
-    padding-bottom: 10px;
-}
-
-@media (max-width: 700px) {
-    .header__container {
-        flex-direction: column;
-        justify-content: center;
-        padding: 10px 0;
-    }
 }

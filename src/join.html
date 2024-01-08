@@ -11,18 +11,20 @@
         <h1 class="text-center w-full text-[calc(1.375rem_+_1.5vw)] pt-[50px] pb-2.5 px-0">Join Us!</h1>
         <form name="join"
             class="shadow-[rgba(100,100,111,0.2)_0px_7px_29px_0px] m-[5px] p-[30px] rounded-[5px] border-[3px] border-solid border-[rgba(100,100,111,0.445)]">
-            <div class="mb-4">
-                <label for="exampleFormControlInput1" class="inline-block mb-2">E-mail</label>
-                <input type="email"
-                    class="font-form appearance-none bg-[#f7f7f9] border bg-clip-padding w-full text-base font-normal leading-normal block px-3 py-1.5 rounded-md border-solid border-[#dee2e6] focus:outline-none focus:shadow-[0_1px_1px_hsl(70,100%,50%)_inset,0_0_8px_hsl(70,100%,50%)] focus:border-[hsl(70,100%,50%)]"
-                    id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="mb-4">
-                <label for="exampleFormControlInput2" class="inline-block mb-2">Name</label>
-                <input type="email"
-                    class="font-form appearance-none bg-[#f7f7f9] border bg-clip-padding w-full text-base font-normal leading-normal block px-3 py-1.5 rounded-md border-solid border-[#dee2e6] focus:outline-none focus:shadow-[0_1px_1px_hsl(70,100%,50%)_inset,0_0_8px_hsl(70,100%,50%)] focus:border-[hsl(70,100%,50%)]"
-                    id="exampleFormControlInput2" placeholder="Your name">
-            </div>
+
+            <include src="components/input.html" locals='{
+                                "id": "exampleFormControlInput1",
+                                "label": "E-mail",
+                                "type": "email",
+                                "placeholder": "name@example.com"
+                            }'></include>
+            <include src="components/input.html" locals='{
+                                "id": "exampleFormControlInput2",
+                                "label": "Name",
+                                "type": "text",
+                                "placeholder": "Your name"
+                            }'></include>
+
             <div class="mb-4">
                 <label class="inline-block mb-2">Level</label>
                 <select
@@ -34,8 +36,7 @@
                     <option value="3" class="font-form">Advanced</option>
                 </select>
             </div>
-            <button type="submit"
-                class="font-form text-white bg-green border-green text-base font-normal leading-normal border px-3 py-1.5 rounded-md">Submit</button>
+            <button type="submit" class="button-primary">Submit</button>
         </form>
     </main>
     <include src="./views/footer.html"></include>
